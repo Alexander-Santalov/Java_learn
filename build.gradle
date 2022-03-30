@@ -2,8 +2,12 @@ plugins {
     id 'java'
 }
 
-group 'org.example'
-version '1.0-SNAPSHOT'
+jar {
+    manifest {
+        attributes 'Main-Class': 'ru.stqa.ptf.sandbox.MyFirstProgram'
+    }
+}
+
 
 repositories {
     mavenCentral()
